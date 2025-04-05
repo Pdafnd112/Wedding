@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+.footer {
+  text-align: center;
+  padding: 40px 40px;
+
+  background-color: #90a8ad;
+}
+.copy-right {
+  display: flex;
+  justify-content: center;
+}
+.save-date p {
+  font-family: "Merriweather-Light";
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.footer .specify-number p {
+  font-family: "Merriweather-Light";
+  font-size: 42px;
+  margin: 5px 0 20px 0;
+}
+.copy-right p span {
+  font-family: "Merriweather-Light";
+  font-size: 14px;
+  color: #ffffffbf;
+}
+.copy-right p a {
+  transition: all 0.3s;
+}
+.copy-right p a:hover {
+  color: #90a8ad;
+}

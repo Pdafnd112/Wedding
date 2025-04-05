@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+.white {
+  color: #ffffff;
+}
+.our-wedding-day {
+  text-align: center;
+  margin: 110px 0;
+}
+.container {
+  width: 100%;
+}
+.slider {
+  width: 100%;
+  min-height: 100vh;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  background-color: #ccc;
+  box-shadow: 0 30px 30px -20px rgba(0, 0, 0, -0.5);
+}
+.bgone {
+  background: url("../images/Parallax_image.jpg") center center no-repeat;
+  width: 120%;
+  height: 110%;
+  background-size: cover;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transition: all 0.5s ease-out;
+}
+.bgtwo {
+  background: url("../images/parallax_image2.jpg") center top no-repeat;
+  width: 120%;
+  height: 110%;
+  background-size: cover;
+  position: absolute;
+  top: 0%;
+  left: -15%;
+  transition: all 0.5s ease-out;
+}
+.bgthree {
+  background: url("../images/parallax_image3.jpg") center center no-repeat;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 800px;
+  background-size: cover;
+  position: absolute;
+  top: -75%;
+  left: 0;
+  transition: all 0.5s ease-out;
+}
+/* rsvp*/
+.text-title h3 {
+  font-family: "Merriweather-Light";
+  font-size: 42px;
+  color: #333333;
+  text-transform: capitalize;
+}
+.separator {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.separator .border {
+  width: 10%;
+  height: 0.5px;
+  background-color: #747474;
+}
+.rsvp-bg {
+  max-width: 100%;
+  text-align: center;
+}
+.slider-rsvp {
+  width: 100%;
+  min-height: 1200px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.bgfour {
+  background: url("../images/rsvp_bg.jpg") center left no-repeat;
+  width: 100%;
+  max-width: 100%;
+  height: 110%;
+  background-size: cover;
+  position: absolute;
+  top: -10%;
+  left: 0;
+  padding-top: 100px;
+  transition: all 0.5s ease-out;
+}
+.separator .border-rsvp {
+  width: 10%;
+  height: 0.5px;
+  background-color: #ffffff;
+}
+.text-under-border {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.text-under-border p {
+  font-family: "Merriweather-Light";
+  font-size: 16px;
+  color: #747474;
+  width: 100%;
+  max-width: 50%;
+}
+.show-items {
+  padding: 100px 0;
+}
+.show-items .dbs img {
+  margin: 20px 0;
+}
+.time-line {
+  width: 3%;
+  height: 0.5px;
+  position: absolute;
+  left: calc(97% / 2);
+  transform: rotate(90deg);
+  background-color: #90a8ad;
+}
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.date h3 {
+  height: 34px;
+  line-height: 34px;
+  width: 130px;
+  background-color: #e0dedeff;
+  font-family: "Merriweather-Light";
+  font-size: 16px;
+  color: #333333;
+  cursor: pointer;
+}
+.photos {
+  display: flex;
+  background-color: #b9675e;
+}
+.our-wedding-day .show-items .photos .display {
+  border: 2px solid aqua;
+  background-color: burlywood;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  border-left: 3px solid #e0dedeff;
+}
+.our-wedding-day .show-items .photos .display a img {
+  width: 100%;
+  max-width: 50%;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  width: 50%;
+  height: 69.2%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(50%, -42%);
+  transition: 0.5s ease;
+  background-color: #b9675e;
+}
+.photos .display .overlay:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.exposition {
+  width: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 30px 25px 20px 0;
+  border-left: 1px solid #e0dedeff;
+  border-right: 1px solid #e0dedeff;
+  border-bottom: 4px solid #e0dedeff;
+}
+.exposition h2 a {
+  font-family: "Merriweather-Light";
+  font-size: 20px;
+  color: #b9675e;
+  transition: all 0.3s;
+}
+.exposition h2 a:hover {
+  color: #90a8ad;
+}
+.rose {
+  margin-bottom: 20px;
+}
+.ordinate {
+  width: 80%;
+  margin: 0 auto;
+}
+.counter-down {
+  background-image: url("../images/counterdown.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter-down {
+  width: 80%;
+  margin: 0 auto;
+  height: 100px;
+}
+.inset {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.left p {
+  font-family: "Merriweather-Light";
+  color: #ffffff;
+}
+.left .first {
+  font-size: 14px;
+}
+.mid {
+  width: 47%;
+  display: flex;
+  justify-content: space-between;
+}
+.right {
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 3px;
+}
+.right .second {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.clock {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.clock .track {
+  display: flex;
+}
+.track p,
+.letters {
+  color: #747474;
+  font-family: "Merriweather-Light";
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.right a {
+  font-family: "Merriweather-Light";
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.right:hover a {
+  color: #90a8ad;
+}
+.venue {
+  background-color: #90a8adff;
+  display: flex;
+  margin: 120px 0;
+}
+.explanation {
+  width: 100%;
+  max-width: 60%;
+  padding: 100px 75px 100px 75px;
+}
+.line {
+  margin: 30px 0;
+}
+.line .border {
+  width: 150px;
+  height: 0.5px;
+  background-color: blanchedalmond;
+}
+.style-heading h3 {
+  font-family: "Merriweather-Light";
+  font-size: 42px;
+  text-transform: capitalize;
+}
+.big-text p {
+  font-family: "Merriweather-Light";
+  font-size: 16px;
+  line-height: 36px;
+}
+.small-text {
+  margin: 25px 0;
+}
+.small-text p {
+  font-family: "Merriweather-Light-italic";
+  font-size: 18px;
+  line-height: 40px;
+}
+.picture {
+  background-image: url("../images/venue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 40%;
+  height: auto;
+}
+.story,
+.gallery {
+  text-align: center;
+}
+.gallery {
+  margin-top: 100px;
+}
+.text-story p {
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Merriweather-Light";
+  font-size: 16px;
+  line-height: 40px;
+}
+.title-story h3 {
+  font-family: "Merriweather-Light";
+  font-size: 42px;
+  text-transform: capitalize;
+  margin: 25px 0;
+}
+.content {
+  text-align: left;
+}
+.cases {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+.couple1 span {
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+.couple1 img {
+  border-radius: 120px;
+  max-width: 100%;
+  height: auto;
+}
+.couple1 img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: opacity 1s transform 1s;
+}
+.cases-title {
+  text-align: left;
+}
+.cases-title h3 {
+  font-family: "Merriweather-Light";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.gap-line {
+  margin: 25px 0 25px 0;
+}
+.gap-line .border {
+  width: 150px;
+  height: 0.5px;
+  background-color: #90a8ad;
+}
+.column {
+  width: 40%;
+  padding: 0 25px;
+}
+.script p {
+  font-family: "Merriweather-Light";
+  font-size: 16px;
+  color: #747474;
+  line-height: 36px;
+  text-align: left;
+}
+.image-frames {
+  display: flex;
+  justify-content: center;
+}
+.frame {
+  margin: 25px 25px;
+  transition: all 0.5s;
+}
+.frame:hover {
+  transform: scale(1.05);
+  box-shadow: 0 30px 30px -20px rgba(0, 0, 0, -0.5);
+}
+.comments {
+  display: flex;
+  margin: 100px 0;
+}
+.groom {
+  background: url("../images/groom_bg.jpg") center no-repeat;
+}
+.bride {
+  background: url("../images/bride_bg.jpg") center no-repeat;
+}
+.joint {
+  background-size: cover;
+  width: 100%;
+  max-width: 50%;
+  background-color: #ccc;
+}
+.design {
+  text-align: center;
+  margin: 100px 50px;
+}
+.post-side img {
+  border-radius: 120px;
+}
+blockquote p {
+  font-family: "Merriweather-Light-italic";
+  font-size: 18px;
+  line-height: 30px;
+  color: #333333;
+}
+.font-style {
+  margin: 30px 0 0 0;
+}
+.font-style p {
+  font-family: "Merriweather-Light";
+  font-size: 18px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.together-forever {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.fine-details {
+  display: flex;
+}
+.question {
+  width: 66%;
+  padding: 200px 100px;
+}
+.control {
+  overflow: hidden;
+}
+.control .faq-question a {
+  padding: 15px 0;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.speech {
+  color: #b9675e;
+  margin-left: 15px;
+}
+.control .speech,
+.control .matn {
+  font-family: "Merriweather-Light";
+  font-size: 16px;
+}
+.l-t {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.matn {
+  display: none;
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+  padding: 10px 0;
+}
+.m-b p {
+  margin-bottom: 50px;
+}
+.form-control {
+  width: 100%;
+  max-width: 50%;
+  height: auto;
+  background-color: #ffffff;
+}
+.form-control form {
+  width: 100%;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.form-control,
+.form-control form {
+  margin: 0 auto;
+}
+.form-control .fusion-form-input {
+  outline: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  transition: all 0.2s ease;
+  border: 1px solid #dbdbdb;
+}
+.form-control .text-area {
+  padding: 1em 1.5em;
+}
+.form-control form input:first-child {
+  margin-top: 50px;
+}
+.form-control .textarea::placeholder {
+  color: #a8a8a8;
+}
+.margin-top {
+  margin-top: 50px;
+}
+.send {
+  margin: 15px 0 50px 0;
+}
+.send .submit {
+  background-color: #b9675e;
+  width: 100%;
+  padding: 1.5em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.send .submit span {
+  color: #ffffff;
+  font-family: "Montserrat-Thin";
+  font-size: 18px;
+}
+.send .submit:hover {
+  background-color: #90a8ad;
+}
