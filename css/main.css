@@ -270,6 +270,7 @@ ul li {
   font-family: "Merriweather-Light";
   text-transform: uppercase;
   color: #ffffff;
+  font-size: 16px;
   transition: all 0.5s;
 }
 .right:hover a {
