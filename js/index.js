@@ -14,38 +14,29 @@ document.addEventListener("scroll", function () {
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 
+// active hamburger menu icon
+const toggleButton = document.getElementById("label-toggle");
+const header = document.querySelector(".header");
+
+toggleButton.addEventListener("click", function () {
+  header.classList.toggle("active");
+});
+
 // for click menu
-document.getElementById("goto").addEventListener("click", function () {
-  const targetElement = document.getElementById("receive");
-  const targetPosition = targetElement.offsetTop;
-  const startPosition = window.pageYOffset;
-  const distance = targetPosition - startPosition;
-  const duration = 1000; // مدت زمان حرکت به میلی‌ثانیه (اینجا 1 ثانیه)
-  let startTime = null;
-
-  function animation(currentTime) {
-    if (startTime === null) startTime = currentTime;
-    const timeElapsed = currentTime - startTime;
-    const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
-    window.scrollTo(0, run);
-    if (timeElapsed < duration) requestAnimationFrame(animation);
-  }
-
-  // تابع برای ایجاد حرکت آرام 
-  function easeInOutQuad(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return (c / 2) * t * t + b;
-    t--;
-    return -c / 2(t(t - 2) - 1) + b;
-  }
-
-  requestAnimationFrame(animation);
+const items = document.querySelectorAll("a[data-target]");
+items.forEach((item) => {
+  item.addEventListener("click", function (e) {
+    // e.preventDefault();
+    const targetId = this.getAttribute("data-target");
+    const targetSection = document.getElementById(targetId);
+    targetSection.scrollIntoView({ behavior: "smooth" });
+  });
 });
 
 //bg one
 document.addEventListener("scroll", function () {
-  let scrollValue = window.scrollY; 
-  let offsetX = scrollValue * 0.1; 
+  let scrollValue = window.scrollY;
+  let offsetX = scrollValue * 0.1;
   document.querySelector(
     ".bgone"
   ).style.backgroundPosition = `${-offsetX}px center`;
@@ -53,25 +44,24 @@ document.addEventListener("scroll", function () {
 
 // bgtwo
 document.addEventListener("scroll", function () {
-  let scrollValue = window.scrollY; 
-  let offsetX = scrollValue * 0.03; 
+  let scrollValue = window.scrollY;
+  let offsetX = scrollValue * 0.03;
   document.querySelector(".bgtwo").style.backgroundPosition = `${offsetX}px`;
 });
 
 // bgthree
 document.addEventListener("scroll", function () {
-  let scrollValue = window.scrollY; 
+  let scrollValue = window.scrollY;
   let bg = document.querySelector(".bgthree");
   bg.style.transform = `translateY(${scrollValue * 0.05}px)`;
 });
 
 // bgfour
 document.addEventListener("scroll", function () {
-  let scrollValue = window.scrollY; 
+  let scrollValue = window.scrollY;
   let bg = document.querySelector(".bgfour");
-  bg.style.transform = `translateY(${scrollValue * 0.01}px)`;
+  bg.style.transform = `translateY(${scrollValue * 0.03}px)`;
 });
-
 
 // Fine details
 document.addEventListener("DOMContentLoaded", function () {

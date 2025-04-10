@@ -14,7 +14,10 @@ ul li {
 }
 .our-wedding-day {
   text-align: center;
-  margin: 110px 0;
+  margin-top: 110px;
+}
+main {
+  width: 100%;
 }
 .container {
   width: 100%;
@@ -73,7 +76,7 @@ ul li {
   margin: 30px 0;
 }
 .separator .border {
-  width: 10%;
+  width: 130px;
   height: 0.5px;
   background-color: #747474;
 }
@@ -91,11 +94,11 @@ ul li {
 .bgfour {
   background: url("../images/rsvp_bg.jpg") center left no-repeat;
   width: 100%;
-  max-width: 100%;
+  /* max-width: 500px; */
   height: 110%;
   background-size: cover;
   position: absolute;
-  top: -10%;
+  top: -30%;
   left: 0;
   padding-top: 100px;
   transition: all 0.5s ease-out;
@@ -113,12 +116,13 @@ ul li {
 .text-under-border p {
   font-family: "Merriweather-Light";
   font-size: 16px;
+  line-height: 30px;
   color: #747474;
   width: 100%;
-  max-width: 50%;
+  max-width: 60%;
 }
 .show-items {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 .show-items .dbs img {
   margin: 20px 0;
@@ -160,8 +164,7 @@ ul li {
   border-left: 3px solid #e0dedeff;
 }
 .our-wedding-day .show-items .photos .display a img {
-  width: 100%;
-  max-width: 50%;
+  width: 50%;
 }
 .overlay {
   position: absolute;
@@ -183,8 +186,7 @@ ul li {
   cursor: pointer;
 }
 .exposition {
-  width: 100%;
-  max-width: 50%;
+  width: 50%;
   margin: 0 auto;
   padding: 30px 25px 20px 0;
   border-left: 1px solid #e0dedeff;
@@ -222,7 +224,8 @@ ul li {
   height: 100px;
 }
 .inset {
-  width: 90%;
+  width: 100%;
+  padding: 0 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -234,16 +237,18 @@ ul li {
   font-size: 14px;
 }
 .mid {
-  width: 47%;
+  /* width: 47%; */
   display: flex;
   justify-content: space-between;
 }
 .right {
+  /* width: 100%; */
   width: 12%;
+  /* max-width: 12%; */
   display: flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
 }
 .right .second {
   font-size: 18px;
@@ -252,8 +257,9 @@ ul li {
 .clock {
   background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
-  padding: 10px 30px;
+  /* justify-content: space-between; */
+  padding: 10px 20px;
+  margin: 0 5px;
   border-radius: 5px;
 }
 .clock .track {
@@ -312,13 +318,16 @@ ul li {
   font-size: 18px;
   line-height: 40px;
 }
-.picture {
-  background-image: url("../images/venue.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.picture img {
+  /* background-image: url("../images/venue.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   width: 100%;
-  max-width: 40%;
-  height: auto;
+  max-width: 100%;
+  /* height: auto; */
+  /* object-fit: cover; */
+  height: 100%;
 }
 .story,
 .gallery {
@@ -397,6 +406,10 @@ ul li {
 .frame {
   margin: 25px 25px;
   transition: all 0.5s;
+}
+.image-frames,
+.frame {
+  overflow: hidden;
 }
 .frame:hover {
   transform: scale(1.05);
@@ -527,7 +540,7 @@ blockquote p {
 .send .submit {
   background-color: #b9675e;
   width: 100%;
-  padding: 1.5em;
+  padding: 1em;
   border: none;
   cursor: pointer;
   transition: all 0.3s;
@@ -536,7 +549,16 @@ blockquote p {
   color: #ffffff;
   font-family: "Montserrat-Thin";
   font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .send .submit:hover {
   background-color: #90a8ad;
 }
+.map iframe {
+  width: 600px;
+  height: 1000px;
+  border: 0;
+}
+

@@ -1,0 +1,190 @@
+/* responsive for desktop */
+@media (max-width: 1440px) {
+  .hero,
+  .parent {
+    width: 100%;
+  }
+  .description {
+    margin-bottom: 50px;
+  }
+  .text-one,
+  .text-two {
+    width: 100%;
+  }
+  .text-under-border p {
+    max-width: 100%;
+  }
+  .bgtwo {
+    width: 100%;
+    max-width: 120%;
+    height: 110%;
+  }
+}
+
+/* responsive for laptop */
+@media (max-width: 1024px) {
+  .hero,
+  .space {
+    display: none;
+  }
+  .wedding-logo {
+    position: absolute;
+    left: 30px;
+  }
+  .label {
+    padding-right: 30px;
+  }
+  .wedding-logo .logo {
+    width: 100%;
+    max-width: 40%;
+    height: auto;
+  }
+  /* new */
+  .header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .nav {
+    /* display: none; */
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  .ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ul li {
+    width: 100%;
+  }
+  .menu-items {
+    color: #352e2b;
+    background-color: white;
+  }
+  #label-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  #label-toggle .layout {
+    width: 32px;
+    height: 4px;
+    background-color: white;
+    transition: all 0.4s ease;
+  }
+  /* active X icon */
+  .header.active #label-toggle .layout1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .header.active #label-toggle .layout2 {
+    opacity: 0;
+  }
+  .header.active #label-toggle .layout3 {
+    transform: rotate(-45deg) translate(10px, -10px);
+  }
+
+  .counter-down {
+    height: 200px;
+  }
+  .mid {
+    width: 100%;
+    justify-content: center;
+  }
+  .counter-down .left {
+    padding-bottom: 25px;
+  }
+  .counter-down .right {
+    padding-top: 25px;
+  }
+  .counter-down .left,
+  .counter-down .right {
+    width: 100%;
+    text-align: center;
+  }
+  .counter-down .inset {
+    flex-direction: column;
+  }
+  .venue {
+    flex-wrap: wrap;
+  }
+  .venue .explanation {
+    max-width: 100%;
+  }
+  .picture {
+    width: 100%;
+  }
+  .comments {
+    flex-direction: column;
+  }
+  .joint {
+    max-width: 100%;
+  }
+  .fine-details {
+    flex-wrap: wrap;
+  }
+  .question,
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+  .map iframe {
+    width: 100%;
+    height: 1000px;
+    border: 0;
+  }
+  .image-frames {
+    flex-wrap: wrap;
+  }
+}
+/* responsive for tablet and mobile */
+@media (max-width: 768px) {
+  .parent {
+    width: 100%;
+    overflow: hidden;
+  }
+  .description p {
+    height: 100px;
+  }
+  .photos {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .our-wedding-day .show-items .photos .display a img {
+    width: 100%;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    max-height: 77%;
+    top: 0;
+    transform: translate(0%, 0%);
+  }
+  .exposition {
+    width: 100%;
+  }
+  .counter-down .inset .mid {
+    flex-wrap: wrap;
+  }
+  .counter-down {
+    height: 300px;
+  }
+  .counter-down .inset .clock {
+    margin: 5px 5px;
+  }
+  .map iframe {
+    width: 600px;
+    height: 1000px;
+    border: 0;
+  }
+}
+/* responsive for miblie */
+@media (max-width: 375px) {
+  .parent {
+    display: block;
+    width: 100%;
+  }
+}

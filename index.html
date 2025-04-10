@@ -15,47 +15,47 @@
   <body>
     <!-- start a project -->
     <!-- hero -->
-    <div class="hero" id="receive">
-        <div class="inner-hero">
-          <section class="heading">
-            <h1>Mr & Mrs Avada</h1>
-          </section>
-          <section class="caption">
-            <h2>Invite you to their wedding on 09. 07. 2024 at 3pm</h2>
-          </section>
-          <div class="title-button">
-            <a href="#" id="goto">
-              <span> RSVP NOW </span>
-            </a>
-          </div>
+    <div class="hero">
+      <div class="inner-hero" id="home">
+        <section class="heading">
+          <h1>Mr & Mrs Avada</h1>
+        </section>
+        <section class="caption">
+          <h2>Invite you to their wedding on 09. 07. 2024 at 3pm</h2>
+        </section>
+        <div class="title-button">
+          <a href="#" data-target="rsvp">
+            <span> RSVP NOW </span>
+          </a>
         </div>
+      </div>
     </div>
     <!-- parent -->
-    <div class="parent" id="receive">
+    <div class="parent">
       <!-- header -->
       <header class="header">
-        <nav>
-          <ul>
+        <nav class="nav">
+          <ul class="ul">
             <li class="space">
-              <a href="#" class="active" id="goto">
+              <a href="#" class="active" data-target="home">
                 <span class="menu-items">HOME</span>
               </a>
             </li>
 
             <li class="space">
-              <a href="#" id="goto">
+              <a href="#" data-target="invite">
                 <span class="menu-items">INVITE</span>
               </a>
             </li>
 
             <li class="space">
-              <a href="#" id="goto">
+              <a href="#" data-target="timinges">
                 <span class="menu-items">TIMINGS</span>
               </a>
             </li>
 
             <li class="space">
-              <a href="#" id="goto">
+              <a href="#" data-target="venue">
                 <span class="menu-items">VENUE</span>
               </a>
             </li>
@@ -69,70 +69,71 @@
             </li>
 
             <li class="space">
-              <a href="#" id="goto">
+              <a href="#" data-target="story">
                 <span class="menu-items">STORY</span>
               </a>
             </li>
 
             <li class="space">
-              <a href="#" id="goto">
+              <a href="#" data-target="gallery">
                 <span class="menu-items">GALLERY</span>
               </a>
             </li>
 
             <li class="space">
-              <a href="#" id="goto">
+              <a href="#" data-target="details">
                 <span class="menu-items">DETAILS</span>
               </a>
             </li>
 
             <li class="space">
-              <a href="#" id="goto">
+              <a href="#" data-target="rsvp">
                 <span class="menu-items">RSVP</span>
               </a>
             </li>
           </ul>
         </nav>
+        <!-- hamburger menu icon -->
+        <label id="label-toggle" class="label">
+          <span class="layout layout1"></span>
+          <span class="layout layout2"></span>
+          <span class="layout layout3"></span>
+        </label>
       </header>
-      <!-- hamburger menu icon -->
-      <div class="hamburger"></div>
       <!-- under-header -->
-      <div>
-        <div class="into-under-header">
-          <div class="description">
-            <p>
-              Mr. & Mrs. Avada have the honor of inviting you to their wedding
-              on
-              <span class="color">09. 07. 2024</span>
-              <span class="color">3pm</span>
-              at the Lincoln Cathedral, Rockport, Maine.
-            </p>
-          </div>
-          <div class="text-one">
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt.
-            </p>
-          </div>
-          <div class="text-two">
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
-            </p>
-          </div>
-          <div class="more-details">
-            <a href="#" class="color">MORE DETAILS</a>
-            |
-            <a href="#" class="color">RSVP NOW</a>
-          </div>
+      <div class="into-under-header" id="invite">
+        <div class="description">
+          <p>
+            Mr. & Mrs. Avada have the honor of inviting you to their wedding on
+            <span class="color">09. 07. 2024</span>
+            <span class="color">3pm</span>
+            at the Lincoln Cathedral, Rockport, Maine.
+          </p>
+        </div>
+        <div class="text-one">
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt.
+          </p>
+        </div>
+        <div class="text-two">
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="more-details">
+          <a href="#" class="color">MORE DETAILS</a>
+          |
+          <a href="#" class="color">RSVP NOW</a>
         </div>
       </div>
     </div>
     <!-- main -->
-    <main id="receive">
+    <main id="timinges">
       <div class="container">
         <div class="slider">
           <div class="bgone"></div>
@@ -340,7 +341,7 @@
         </div>
       </div>
       <!-- venue -->
-      <div class="venue" id="receive">
+      <div class="venue" id="venue">
         <!-- left -->
         <div class="explanation">
           <div class="content">
@@ -385,10 +386,12 @@
           </div>
         </div>
         <!-- right -->
-        <div class="picture"></div>
+        <div class="picture">
+          <img src="./images/venue.jpg" alt="venue" />
+        </div>
       </div>
       <!-- story -->
-      <div class="story" id="#receive">
+      <div class="story" id="story">
         <!-- up -->
         <div>
           <span>
@@ -596,7 +599,7 @@
       </div>
 
       <!-- photo-gallery -->
-      <div class="gallery">
+      <div class="gallery" id="gallery">
         <div>
           <span>
             <img
@@ -749,7 +752,7 @@
       </div>
 
       <!-- fine-details -->
-      <div class="fine-details">
+      <div class="fine-details" id="details">
         <!-- question -->
         <div class="question">
           <!-- into-question -->
@@ -902,49 +905,47 @@
           </div>
         </div>
         <!-- map -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d157738.92880142882!2d-1.1808646713867277!3d51.84870834152851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6b01479b8ab%3A0x834a7f46d7111270!2sSt%20Aldate&#39;s%2C%20Oxford%2C%20UK!5e0!3m2!1sen!2sus!4v1743010898361!5m2!1sen!2sus"
-          width="600"
-          height="fixed"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d157738.92880142882!2d-1.1808646713867277!3d51.84870834152851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6b01479b8ab%3A0x834a7f46d7111270!2sSt%20Aldate&#39;s%2C%20Oxford%2C%20UK!5e0!3m2!1sen!2sus!4v1743010898361!5m2!1sen!2sus"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
       <!-- rsvp-bg -->
-      <div class="rsvp-bg" id="receive">
+      <div class="rsvp-bg" id="rsvp">
         <div class="slider-rsvp">
           <div class="bgfour">
             <div>
-              <div>
-                <span>
-                  <img
-                    width="39"
-                    height="44"
-                    src="./images/rose.webp"
-                    alt="Rose Graphic"
-                    title="Rose Graphic"
-                  />
-                </span>
-              </div>
-
-              <section class="title-story">
-                <h3 class="white">RSVP</h3>
-              </section>
-
-              <div class="separator">
-                <div class="border-rsvp"></div>
-              </div>
-
-              <div class="text-story m-b">
-                <p class="white">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident.
-                </p>
-              </div>
+              <span>
+                <img
+                  width="39"
+                  height="44"
+                  src="./images/rose.webp"
+                  alt="Rose Graphic"
+                  title="Rose Graphic"
+                />
+              </span>
             </div>
+
+            <section class="title-story">
+              <h3 class="white">RSVP</h3>
+            </section>
+
+            <div class="separator">
+              <div class="border-rsvp"></div>
+            </div>
+
+            <div class="text-story m-b">
+              <p class="white">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident.
+              </p>
+            </div>
+
             <!-- down -->
             <div class="form-control">
               <form action="">
