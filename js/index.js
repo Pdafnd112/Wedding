@@ -14,7 +14,7 @@ document.addEventListener("scroll", function () {
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 
-// active hamburger menu icon
+//active hamburger menu icon
 const toggleButton = document.getElementById("label-toggle");
 const header = document.querySelector(".header");
 
