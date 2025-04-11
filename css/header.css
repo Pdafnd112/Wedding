@@ -90,17 +90,6 @@ ul li {
   align-items: center;
   height: 118px;
 }
-/* .nav {
-  display: block;
-} */
-.header .nav .ul {
-  max-width: 65%;
-  margin: 0 auto;
-  padding: 22px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .space {
   text-align: center;
 }
