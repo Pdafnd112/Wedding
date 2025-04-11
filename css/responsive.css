@@ -52,7 +52,7 @@
     width: 100%;
   }
   .header .nav .ul {
-    display: none; 
+    display: none !important; 
     position: absolute;
     top: 100px;
     left: 0;
@@ -74,7 +74,7 @@
   }
   /* active menu */
   .header.active .nav .ul {
-    display: flex; 
+    display: flex !important; 
   }
   .header .nav .ul li a {
     width: 100%;
