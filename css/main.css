@@ -107,6 +107,14 @@ main {
   height: 0.5px;
   background-color: #ffffff;
 }
+.sample p {
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Merriweather-Light";
+  font-size: 16px;
+  line-height: 40px;
+}
 .text-under-border {
   display: flex;
   justify-content: center;
@@ -336,6 +344,7 @@ main {
   margin-top: 100px;
 }
 .text-story p {
+  color: #747474;
   width: 50%;
   margin: 0 auto;
   font-family: "Merriweather-Light";
@@ -485,7 +494,6 @@ blockquote p {
 .l-t {
   border-bottom: 1px solid #dbdbdb;
 }
-
 .matn {
   display: none;
   margin-top: 10px;
@@ -497,14 +505,12 @@ blockquote p {
   margin-bottom: 50px;
 }
 .form-control {
-  width: 100%;
-  max-width: 50%;
+  width: 50%;
   height: auto;
   background-color: #ffffff;
 }
 .form-control form {
-  width: 100%;
-  max-width: 80%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
@@ -560,4 +566,3 @@ blockquote p {
   height: 1000px;
   border: 0;
 }
-

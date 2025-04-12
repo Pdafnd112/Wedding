@@ -52,7 +52,7 @@
     width: 100%;
   }
   .header .nav .ul {
-    display: none !important; 
+    display: none !important;
     position: absolute;
     top: 100px;
     left: 0;
@@ -69,11 +69,11 @@
   }
   .menu-items {
     color: #352e2b;
-   font-weight: 800;
+    font-weight: 800;
   }
   /* active menu */
   .header.active .nav .ul {
-    display: flex !important; 
+    display: flex !important;
   }
   .header .nav .ul li a {
     width: 100%;
@@ -136,6 +136,13 @@
   .venue .explanation {
     max-width: 100%;
   }
+  /* text-story */
+  .text-story p {
+    width: 75%;
+  }
+  .column {
+    width: 70%;
+  }
   .picture {
     width: 100%;
   }
@@ -160,6 +167,21 @@
   }
   .image-frames {
     flex-wrap: wrap;
+  }
+  /* main */
+  main {
+    width: 100%;
+    overflow: hidden;
+  }
+  /* rsvp-bg */
+  .form-control {
+    width: 90%;
+  }
+  .slider-rsvp {
+    min-height: 1300px;
+  }
+  .bgfour {
+    top: -40%;
   }
 }
 /* responsive for tablet and mobile */
@@ -202,11 +224,27 @@
     height: 1000px;
     border: 0;
   }
+  /* text-story */
+  .column {
+    width: 100%;
+  }
+  .cases {
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  /* question */
+  .question {
+    padding: 100px 50px;
+  }
 }
 /* responsive for miblie */
 @media (max-width: 375px) {
   .parent {
     display: block;
     width: 100%;
+  }
+  /* question */
+  .question {
+    padding: 100px 25px;
   }
 }
