@@ -18,6 +18,9 @@
     width: 130%;
     left: -27%;
   }
+  .map iframe{
+    min-width: 100vw;
+  }
 }
 /* responsive for laptop */
 @media (max-width: 1024px) {
