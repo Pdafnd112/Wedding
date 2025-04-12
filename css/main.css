@@ -160,14 +160,13 @@ main {
 }
 .photos {
   display: flex;
-  background-color: #b9675e;
 }
 .our-wedding-day .show-items .photos .display {
-  border: 2px solid aqua;
-  background-color: burlywood;
   width: 100%;
   position: relative;
   margin-top: 50px;
+}
+.border-left {
   border-left: 3px solid #e0dedeff;
 }
 .our-wedding-day .show-items .photos .display a img {

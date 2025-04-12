@@ -15,9 +15,8 @@
     max-width: 100%;
   }
   .bgtwo {
-    width: 100%;
-    max-width: 120%;
-    height: 110%;
+    width: 130%;
+    left: -27%;
   }
 }
 /* responsive for laptop */
@@ -173,15 +172,22 @@
     width: 100%;
     overflow: hidden;
   }
+  .bgtwo {
+    min-width: 160%;
+    left: -60%;
+  }
+  .bgthree {
+    top: -90%;
+  }
+  .bgfour {
+    top: -40%;
+  }
   /* rsvp-bg */
   .form-control {
     width: 90%;
   }
   .slider-rsvp {
     min-height: 1300px;
-  }
-  .bgfour {
-    top: -40%;
   }
 }
 /* responsive for tablet and mobile */
@@ -191,7 +197,8 @@
     overflow: hidden;
   }
   .description p {
-    height: 100px;
+    height: 75px;
+    font-size: 28px;
   }
   .photos {
     width: 100%;
@@ -236,6 +243,38 @@
   .question {
     padding: 100px 50px;
   }
+  /* bgthree */
+  #fit-height-three {
+    min-height: 800px;
+    height: 120%;
+  }
+  .bgthree {
+    top: -90%;
+  }
+  /* rsvp-bg */
+  .sample p {
+    width: 75%;
+  }
+}
+@media (max-width: 425px) {
+  .description p {
+    height: 75px;
+    font-size: 22px;
+  }
+  /* bgtwo  */
+  .fit-height-two {
+    width: 100%;
+    min-width: 210%;
+    left: -100%;
+  }
+  /* bgthree */
+  #fit-height-three {
+    min-height: 800px;
+    height: 120%;
+  }
+  .bgthree {
+    top: -92%;
+  }
 }
 /* responsive for miblie */
 @media (max-width: 375px) {
@@ -246,5 +285,15 @@
   /* question */
   .question {
     padding: 100px 25px;
+  }
+}
+@media (max-width: 320px) {
+  /* bgthree */
+  .bgthree {
+    top: -92%;
+  }
+  #fit-height-three {
+    min-height: 900px;
+    height: 110%;
   }
 }
